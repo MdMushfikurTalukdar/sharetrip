@@ -94,7 +94,7 @@ include_once("connection.php");
 									<ul class="nav navbar-nav navbar-right">
 										<li class="smooth-menu"><a href="#home">home</a></li>
 										<li ><a href="admin_login.php">Admin</a></li>
-										<li ><a href="#gallary">Packages & Offers </a></li>
+										<li ><a href="packages_and_offers/index.php">Packages & Offers </a></li>
 										<li ><a href="guide_login.php">Guide</a></li>
 										
 										
@@ -190,6 +190,7 @@ include_once("connection.php");
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12">
 					<div class="single-tab-select-box">
+
 						<h2>destination</h2>
 
 						<div class="travel-select-icon">
@@ -262,11 +263,11 @@ include_once("connection.php");
 							<select class="form-control " name="Make4" require>
 
 								  
-<option value="normal">Normal</option><!-- /.option-->
+<option value="Normal">Normal</option><!-- /.option-->
 
-<option value="first">First Class</option><!-- /.option-->
+<option value="first class">First Class</option><!-- /.option-->
 
-<option value="second">Second Class</option><!-- /.option-->
+<option value="Second Class">Second Class</option><!-- /.option-->
 
 </select><!-- /.select-->
 						</div><!-- /.travel-select-icon -->
@@ -281,7 +282,7 @@ include_once("connection.php");
 				</div><!--/.col-->
 				<div class="clo-sm-7">
 					<div class="about-btn travel-mrt-0 pull-right">
-						<button  class="about-view travel-btn" >
+						<button  class="about-view travel-btn">
 						search
 							
 						</button><!--/.travel-btn-->
@@ -325,7 +326,7 @@ include_once("connection.php");
 
 					<div class="travel-select-icon">
 						<select class="form-control " name="maker2">
-							<option value="Cox's Bazar">Jaflong</option>
+							<option value="Jaflong">Jaflong</option>
 							<option value="Bisanakandi">Bisanakandi</option>
 							<option value="Sundarbans">Sundarbans</option>
 						   <option value="Chittagong">Chittagong</option>
@@ -440,8 +441,8 @@ include_once("connection.php");
 
 															  	<option value="	Shah Amanat International Airport,Chittagong">	Shah Amanat International Airport,Chittagong</option><!-- /.option-->
 
-															  	<option value="Hazrat Shahjalal Int">Hazrat Shahjalal International Airport, Dhaka</option><!-- /.option-->
-															  	<option value="Osmani International">Osmani International Airport, Sylhet</option><!-- /.option-->
+															  	<option value="Hazrat Shahjalal International Airport, Dhaka">Hazrat Shahjalal International Airport, Dhaka</option><!-- /.option-->
+															  	<option value="Osmani International Airport, Sylhet">Osmani International Airport, Sylhet</option><!-- /.option-->
                                                                 <option value="Cox's Bazar Airport,Cox's Bazar">Cox's Bazar Airport,Cox's Bazar</option>
 																<option value="Jessore Airport,Jessore">	Jessore Airport,Jessore</option>
 																<option value="Barisal Airport,Barisal">	Barisal Airport,Barisal</option>
@@ -523,8 +524,8 @@ include_once("connection.php");
 
 															  	<option value="	Shah Amanat International Airport,Chittagong">	Shah Amanat International Airport,Chittagong</option><!-- /.option-->
 
-															  	<option value="Hazrat Shahjalal Int">Hazrat Shahjalal International Airport, Dhaka</option><!-- /.option-->
-															  	<option value="Osmani International">Osmani International Airport, Sylhet</option><!-- /.option-->
+															  	<option value="Hazrat Shahjalal International Airport, Dhaka">Hazrat Shahjalal International Airport, Dhaka</option><!-- /.option-->
+															  	<option value="Osmani International Airport, Sylhet">Osmani International Airport, Sylhet</option><!-- /.option-->
                                                                 <option value="Cox's Bazar Airport,Cox's Bazar">Cox's Bazar Airport,Cox's Bazar</option>
 																<option value="Jessore Airport,Jessore">	Jessore Airport,Jessore</option>
 																<option value="Barisal Airport,Barisal">	Barisal Airport,Barisal</option>
@@ -545,7 +546,7 @@ include_once("connection.php");
 															<select class="form-control "name="ma5">
 
 															  	<option value="default">enter class</option><!-- /.option-->
-															  	<option value="normal">Normal</option><!-- /.option-->
+															  	<option value="Normal">Normal</option><!-- /.option-->
 
 															  	<option value="first class">First Class</option><!-- /.option-->
 
@@ -831,6 +832,21 @@ include_once "blog_others.php";
 
 		<!--Custom JS-->
 		<script src="assets/js/custom.js"></script>
+		
+		<!--Tawk live chat-->
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/6284cafcb0d10b6f3e72ce2a/1g3bbhrd9';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
+		</script>
+		<!--End of Tawk.to Script-->
 
 
 	</body>
