@@ -1,3 +1,9 @@
+<?php
+include_once "../connection.php";
+$price = 2;
+$bon = 0.1;
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,12 +19,12 @@
   <div class="card-image"></div>
   <div class="card-text">
     
-    <h2>Round Trip</h2>
+    <h2>Round Trip with 10% off</h2>
     
   </div>
   <div class="card-stats">
     
-    <button id="btn">Buy</button>
+  <a href="../index.php?price=<?php echo $price; ?> && ?bon=<?php echo $bon; ?>"> <button id="btn">Buy</button></a>
 
   </div>
 </div>
