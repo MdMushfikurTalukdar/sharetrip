@@ -2,6 +2,8 @@
 include_once "../connection.php";
 $price = 2;
 $bon = 0.1;
+$food = 10000;
+$guard = 20000;
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +39,7 @@ $bon = 0.1;
    
   </div>
   <div class="card-stats">
-    <button id="btn">Buy</button>
+  <a href="../index.php?food=<?php echo $food; ?>"><button id="btn">Buy</button></a>
   </div>
 </div>
 
@@ -49,7 +51,7 @@ $bon = 0.1;
   
   </div>
   <div class="card-stats">
-    <button id="btn">Buy</button>
+  <a href="../index.php?guard=<?php echo $guard; ?>"><button id="btn">Buy</button></a>
   </div>
 </div>
 </div>
