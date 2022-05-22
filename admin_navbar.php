@@ -58,7 +58,6 @@ body {
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="transport/transport_name.php">Transport</a>
-  <a href="employee_user_order.php">Message</a>
   <a href="admin_food.php">Food</a>
   <a href="admin_accept_reject.php">Add New Guid</a>
   <a href="Site5/admin_cancel_request.php">Ticket Cancel</a>
