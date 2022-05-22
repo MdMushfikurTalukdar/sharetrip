@@ -133,19 +133,28 @@ if ($result->num_rows > 0) {
 
 		</section><!--/.testimonial-->	
 		<!-- testemonial End -->
+		
         <?php }
                     
                     else{
+						?>
+						<body  style="background-color:powderblue;">
+						<div style="margin-top: 5cm;margin-left:15cm;font-size:30px;color: #666362;">
+						<?php
                         echo "There is no request available"; ?>
+						</div>
 						<div>
+							<div style="margin-top: 5cm;margin-left:19cm;font-size:30px">
 				<button><a href="admin_menu.php">Go Back</a></button>
+					</div>
 				</div>
+					</body>
 				<?php
 						
                     }
                     
                     ?>
-
+					
 
         <script src="assets/js/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
