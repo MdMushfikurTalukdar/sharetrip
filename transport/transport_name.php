@@ -19,9 +19,9 @@ if($_SERVER['REQUEST_METHOD'] =="POST")
     $second = $_POST["second"];
     $first = $_POST["first"];
 
-    $query = "INSERT INTO vehicle(location, destination, date, time, v_name, g_email,v_code) 
-    VALUES ('$location','$destination','$date','$time','$name','$email','$code')";
-    $query_run = mysqli_query($conn, $query);
+    $query = "INSERT INTO `vehicle` (`v_name`, `date`, `time`, `location`, `destination`, `g_email`, `v_code`) 
+    VALUES ('$name', '$date', '$time', '$location', '$destination', '$email', '$code')";
+    $query_run = mysqli_query($conn,$query);
 
     if($name=='bus'){
         $price = 500;
@@ -33,7 +33,10 @@ if($_SERVER['REQUEST_METHOD'] =="POST")
         $price = 2500;
     }
 
-    for($i =0; $i<$normal; $i++){
+    
+    if($query_run)
+    {
+        for($i =0; $i<$normal; $i++){
         $query2 = "INSERT INTO seat(class, v_code, price) 
         VALUES ('normal','$code','$price')";
         $query_run2 = mysqli_query($conn, $query2);
@@ -53,8 +56,6 @@ if($_SERVER['REQUEST_METHOD'] =="POST")
         $query_run4 = mysqli_query($conn, $query4);
         $price = $price/3;
     }
-    if($query_run)
-    {
         
         header("Location:../admin_menu.php");
     }
@@ -96,7 +97,7 @@ if($_SERVER['REQUEST_METHOD'] =="POST")
                
                 
            
-      <form method="post">
+      <form method="POST">
         <div style="margin-left: -3cm; margin-top: 3.5cm; font-size: 30px;color:beige" class="row">
             <h1 style="color:#E3EB0E; font-size:45px;"><b>Pick Vehicle </b></h1><br><br>
 
@@ -109,11 +110,11 @@ if($_SERVER['REQUEST_METHOD'] =="POST")
         </div> 
 
         <div style="margin-left: 10cm; margin-top: -8cm; font-size: 20px;color:beige" class="row">
-        <label style="color:#E3EB0E;" class='fas fa-location-arrow' for="bus"> Current Location</label><br><br>
+        <label style="color:#E3EB0E;" class='fas fa-location-arrow' > Current Location</label><br><br>
           <input  type="text"  name="location" placeholder="Enter Location" >
                <br><br><br>
 
-            <label style="color:#E3EB0E;" class='fas fa-map-marker-alt' for="train">  Destination Location</label><br><br>
+            <label style="color:#E3EB0E;" class='fas fa-map-marker-alt' >  Destination Location</label><br><br>
           <input type="text"  name="destination" placeholder="Enter Destination">
                <br><br><br>
 
