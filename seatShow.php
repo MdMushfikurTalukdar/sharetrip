@@ -66,7 +66,7 @@ include_once("connection.php");
                                <td style=" padding-left: 120px;"><?php echo $row['class']?> </td>
                                <td style=" padding-left: 95px;"><?php echo $row['time']?> </td>
                                <td style=" padding-left: 100px;"><?php echo $row['price']?> </td>
-                               <td style="padding-left:100px;"><a href="guide.html"><button style="background-color:red" >Buy</button></a></td>
+                               <td style="padding-left:100px;"><a href="user_add_guide.php?seat_no=<?php echo $row['seat_no']; ?>"><button style="background-color:red" >Buy</button></a></td>
 
                                </tr>
                            </tbody>
