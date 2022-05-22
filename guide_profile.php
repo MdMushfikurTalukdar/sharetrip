@@ -134,7 +134,8 @@ $result = mysqli_query($conn,$sql);
     <?php
             $code = $row["v_code"];
 
-$sql2 = "SELECT * from seat where v_code ='$code' ";
+$sql2 = "SELECT * from seat where guid='yes' ";
+
 $result2 = mysqli_query($conn,$sql2);
 echo "Seat No : ";
 echo "<select>";
