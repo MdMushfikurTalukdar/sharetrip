@@ -28,3 +28,5 @@
 </div>
 
 <div style="margin-top: 5cm;margin-left: 18cm;" class="loader"></div>
+
+<div style="margin-left:19cm; margin-top:2cm;"> <a href="index.php"> <button>GO To Index</button></a></div>
