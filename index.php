@@ -200,6 +200,7 @@ include_once("connection.php");
 								<option value="Lalakhal">Lalakhal</option>
 							   <option value="Cox's Bazar">Cox's Bazar</option>
 								<option value="Rangamati">Rangamati</option>
+								<option value="Bandarban">Bandarban</option>
 								<option value="Chittagong Hill-Tracts">Chittagong Hill-Tracts</option>
 
 							</select><!-- /.select-->
@@ -212,6 +213,7 @@ include_once("connection.php");
 								<option value="Lalakhal">Lalakhal</option>
 							   <option value="Cox's Bazar">Cox's Bazar</option>
 								<option value="Rangamati">Rangamati</option>
+								<option value="Bandarban">Bandarban</option>
 								<option value="Chittagong Hill-Tracts">Chittagong Hill-Tracts</option>
 
 							</select><!-- /.select-->
