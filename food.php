@@ -45,7 +45,7 @@ include_once("connection.php");
                                <td style=" padding-left: 90px;"><?php echo $row['f_name']?> </td>
                                <td style=" padding-left: 120px;"><?php echo $row['f_price']?> </td>
                                <td style=" padding-left: 10%;">  <img src="<?php echo $row['f_image']; ?>" /> </td>
-                                <td style="padding-left:10%;"> <a href="guide.html"><button> Buy</button></a></td>
+                                <td style="padding-left:10%;"> <a href="guide.php"><button> Buy</button></a></td>
                             </tr>
                         </tbody>
                    
